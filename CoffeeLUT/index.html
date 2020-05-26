@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coffee LUT</title>
+    <link rel="icon" type="image/x-icon" href="icon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="icon.png" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!-- ----------------------------- -->
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="assets/js/main.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid header">
+            <a class="navbar-brand logo" href="index.html"><img src="logo2.png" class=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html">Coffee</a>
+                    </li>
+
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            pages
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="category.html">Category</a>
+                            <a class="dropdown-item" href="cart.html">cart</a>
+                            <a class="dropdown-item" href="signin.html">sign in</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="address.html">address</a>
+                            <a class="dropdown-item" href="payment.html">payment</a>
+                            <a class="dropdown-item" href="contact.html">contact</a>
+                        </div>
+                    </li> -->
+
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="category.html" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            equipments
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="category.html">Grinderes</a>
+                            <a class="dropdown-item" href="category.html">Dripperes</a>
+                            <a class="dropdown-item" href="category.html">Espresso Tools</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="category.html">Cups & Glasses</a>
+                            <a class="dropdown-item" href="category.html">Kettles</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact us</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-search"></i> </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <input type="text" name="" id="">
+                            <!-- <button class="button-primary button-cricle">
+                                <i class="fas fa-search"></i> </a>
+                            </button> -->
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile-user.html">
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signin.html">
+                            <i class="fas fa-sign-in-alt"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="header-banner">
+        </div>
+        <div class="clear"></div>
+    </header>
+
+
+
+
+
+    <!-- Welcome Section - Jumbotron -->
+    <section id="about" class="page-section">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-12 padding">
+                    <h3>
+                        It has always been, and will always be, about quality. We’re passionate about ethically sourcing
+                        the finest coffee beans, roasting them with great care, and improving the lives of people who
+                        grow them. We care deeply about all of this; our work is never done.
+                    </h3>
+
+                    <br>
+                    <div class="circular-bg-img"><span class="circle"><span>
+                                <img src="logo2.png" />
+                            </span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- 3 Values -->
+    <div class="container-fluid padding darker">
+        <div class="row text-center padding circles-section width-80">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <span class="circle">
+                    <i class="fas fa-coffee"></i> </span>
+                <p class="three-cols-title">QUALITY COFFEE</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum, tellus et.</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <span class="circle">
+                    <i class="fas fa-shopping-cart"></i>
+                </span>
+                <p class="three-cols-title">EASY TO ORDER</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum, tellus et.</p>
+            </div>
+            <div class="col-md-4">
+                <span class="circle">
+                    <i class="fas fa-shipping-fast"></i>
+                </span>
+                <p class="three-cols-title">FAST DELIVERY</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum, tellus et.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Fixed Background -->
+    <figure>
+        <div class="fixed-wrap">
+            <div id="fixed">
+            </div>
+        </div>
+    </figure>
+
+
+
+
+
+    <!-- Featured Products -->
+    <section class="page-section">
+        <div class="container-fluid padding">
+            <div class="row welcome text-center">
+                <div class="col-12">
+                    <h1 class="display-4">Featured Products</h1>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+        <div class="padding products-wrapper">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Fellow Stagg Pour-Over Electric Kettle</h4>
+                    <img class="card-img-top" src="img/products/fellow-stagg-pour-over-electric-kettle.png">
+                    <p class="card-text">SR 589</p>
+                    <button class="button-primary" data-toggle="modal" data-target="#product01" href="#">View</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Cafflano Klassic</h4>
+                    <img class="card-img-top" src="img/products/cafflano-klassic.jpeg">
+                    <p class="card-text">SR 288</p>
+                    <button class="button-primary" data-toggle="modal" data-target="#product02" href="#">View</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Comandante C40 Nitro Blade Burgundy</h4>
+                    <img class="card-img-top" src="img/products/comandante-c40-nitro-blade-burgundy.png">
+                    <p class="card-text">SR 1,150</p>
+                    </p>
+                    <button class="button-primary" data-toggle="modal" data-target="#product03" href="#">View</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Cafflano Klassic</h4>
+                    <img class="card-img-top" src="img/products/cafflano-klassic.jpeg">
+                    <p class="card-text">SR 288</p>
+                    <button class="button-primary" data-toggle="modal" data-target="#product02" href="#">View</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Comandante C40 Nitro Blade Burgundy</h4>
+                    <img class="card-img-top" src="img/products/comandante-c40-nitro-blade-burgundy.png">
+                    <p class="card-text">SR 1,150</p>
+                    </p>
+                    <button class="button-primary" data-toggle="modal" data-target="#product03" href="#">View</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Fellow Stagg Pour-Over Electric Kettle</h4>
+                    <img class="card-img-top" src="img/products/fellow-stagg-pour-over-electric-kettle.png">
+                    <p class="card-text">SR 589</p>
+                    <button class="button-primary" data-toggle="modal" data-target="#product01" href="#">View</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="product01" tabindex="-1" role="dialog" aria-labelledby="product01Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body container-fluid">
+                    <div class="row">
+
+                        <div class="col-lg-6">
+                            <img class="card-img-top" src="img/products/fellow-stagg-pour-over-electric-kettle.png">
+                        </div>
+
+                        <div class="col-lg-6">
+                            <h2>Fellow Stagg Pour-Over Electric Kettle</h2>
+                            <p>Availability: In stock</p>
+                            <p class="card-text">SR 589</p>
+
+                            <button type="button" class="button-primary">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="product02" tabindex="-2" role="dialog" aria-labelledby="product02Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body container-fluid">
+                    <div class="row">
+
+                        <div class="col-lg-6">
+                            <img class="card-img-top" src="img/products/cafflano-klassic.jpeg">
+                        </div>
+
+                        <div class="col-lg-6">
+                            <h2>Cafflano Klassic</h2>
+                            <p class="red">Availability: Out of stock</p>
+                            <p class="card-text">SR 288</p>
+
+                            <button type="button" class="button-primary">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="product03" tabindex="-3" role="dialog" aria-labelledby="product03Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body container-fluid">
+                    <div class="row">
+
+                        <div class="col-lg-6">
+                            <img class="card-img-top" src="img/products/comandante-c40-nitro-blade-burgundy.png">
+                        </div>
+
+                        <div class="col-lg-6">
+                            <h2>Comandante C40 Nitro Blade Burgundy</h2>
+                            <p>Availability: In stock</p>
+                            <p class="card-text">SR 1,150</p>
+
+                            <button type="button" class="button-primary">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Bestsellers -->
+    <section id="team" class="page-section">
+        <div class="container-fluid padding">
+            <div class="row welcome text-center">
+                <div class="col-12">
+                    <h1 class="display-4">Bestsellers</h1>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+        <div class="padding products-wrapper">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Comandante C40 Nitro Blade Burgundy</h4>
+                    <img class="card-img-top" src="img/products/comandante-c40-nitro-blade-burgundy.png">
+                    <p class="card-text">SR 1,150</p>
+                    </p>
+                    <button class="button-primary" data-toggle="modal" data-target="#product03" href="#">View</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Cafflano Klassic</h4>
+                    <img class="card-img-top" src="img/products/cafflano-klassic.jpeg">
+                    <p class="card-text">SR 288</p>
+                    <button class="button-primary" data-toggle="modal" data-target="#product02" href="#">View</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Fellow Stagg Pour-Over Electric Kettle</h4>
+                    <img class="card-img-top" src="img/products/fellow-stagg-pour-over-electric-kettle.png">
+                    <p class="card-text">SR 589</p>
+                    <button class="button-primary" data-toggle="modal" data-target="#product01" href="#">View</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- banner -->
+    <div class="padding fact">
+        <div class="text-center">
+            <div class="col-12 fact">
+                <img class="fact-img" src="img/fact.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 col-sm-6">
+                        <div class="footer-pad">
+                            <h4>Coffee LUT</h4>
+                            <p>Dhahran, 31261, KSA.<br>
+                                +966 (13) 860-0000<br>
+                                info@coffeelut.sa</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="footer-pad">
+                            <h4>CUSTOMER SERVICES</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Shipping Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Follow Us</h4>
+                        <ul class="social-icons">
+                            <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a class="googleP" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 copy">
+                        <p class="text-center">Copyrights &copy; 2020 Coffee LUT. All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

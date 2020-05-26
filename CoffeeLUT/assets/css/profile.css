@@ -1,0 +1,91 @@
+.card-body {
+    height: 14rem;
+}
+.card {
+    border-radius: 1.8rem !important;
+    width: 18rem;
+    margin: 10px auto;
+    display: inline-block;
+    /* margin: 0px 15px 20px 15px; */
+    -webkit-transition:all .2s linear;
+    -o-transition:all .2s linear;
+    transition:all .2s linear; 
+    /* background-color: #CFC3C6cc; */
+    background-color: #CFC3C6;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    border-color: transparent;
+    text-align: center;
+}
+.card:hover {
+    /* background-color: rgba(199, 199, 199, 0.1); */
+    -webkit-transition:all .2s linear;
+    -o-transition:all .2s linear;
+    transition:all .2s linear;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 200px 0 rgba(0, 0, 0, 0.12);
+}
+.products-wrapper {
+    /* margin: 25px 300px 25px 300px; */
+    margin: 10px auto;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+} 
+.card-title {
+    color: #6A5975;
+}
+.card-img-top {
+    margin: 0;
+    font-size: 8rem;
+    /* mix-blend-mode: normal; */
+    color: #6A5975dd;
+}
+header {
+    height: 50%;
+}
+.products-wrapper button {
+    background: none;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    padding: 0;
+    width: 18rem;
+    margin: 0 auto;
+}
+h1 {
+    color: #311741;   
+}
+tr.hide-table-padding td {
+    padding: 0;
+}
+.expand-button {
+    position: relative;
+}
+.accordion-toggle .expand-button:after {
+    position: absolute;
+    left:.75rem;
+    top: 50%;
+    transform: translate(0, -50%);
+    content: '-';
+    cursor: pointer;
+}
+.accordion-toggle.collapsed .expand-button:after {
+    content: '+';    cursor: pointer;  
+}
+.table {
+    background-color: #CFC3C6;
+    color: #39313C;
+}
+.table .button-primary {
+    padding: 9px 12px !important;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (max-width: 700px) {
+    .products-wrapper {
+        /* margin: 25px 25px 25px 25px; */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) ;
+   }
+}
